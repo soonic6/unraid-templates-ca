@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>develancacheui_backend</Name>
+  <Repository>devedse/develancacheui_backend:latest</Repository>
+  <Registry>https://hub.docker.com/r/devedse/develancacheui_backend/</Registry>
+  <Network>proxynet</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/devedse/DeveLanCacheUI_Backend/issues</Support>
+  <Project>https://github.com/devedse/DeveLanCacheUI_Backend/<Project/>
+  <Overview>Backend Container for an UI for LANcache.&#xD;
+&#xD;
+Note: Also add the DNS line if you errors in the container logs that it can't get the manifests due to a 401 unauthorized.&#xD;
+Also use --sysctl net.ipv6.conf.all.disable_ipv6=1 as extra parameters if you get problems, when using IPv6.</Overview>
+  <Category>Tools: Network:Other</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams>--no-healthcheck</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1696685047</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>backend and frontend containers MUST run in the same custom user bridge/custom user network.</Requires>
+  <Config Name="Port" Target="80" Default="7301" Mode="tcp" Description="Port must be 7301 for backend" Type="Port" Display="always" Required="true" Mask="false">7301</Config>
+  <Config Name="appdata" Target="/var/develancacheuidata/" Default="/mnt/user/appdata/develancacheui/backend/" Mode="rw" Description="appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache0_vm/appdata/develancacheui/backend/</Config>
+  <Config Name="lancache logfiles" Target="/var/develancacheui/lancachelogs/" Default="/mnt/user/appdata/lancache/logs" Mode="ro" Description="lancache logfile path - read only" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache0_vm/appdata/lancache/logs/</Config>
+  <Config Name="timezone" Target="TZ" Default="Europe/Berlin" Mode="" Description="timezone &#13;&#10;Changing the TZ and LANG only impact the way the container logs.&#13;&#10;https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" Type="Variable" Display="always" Required="true" Mask="false">Europe/Berlin</Config>
+  <Config Name="language codes" Target="" Default="en_GB.UTF-8" Mode="" Description="Changing the TZ and LANG only impact the way the container logs." Type="Variable" Display="always" Required="true" Mask="false">de_DE.utf8</Config>
+</Container>

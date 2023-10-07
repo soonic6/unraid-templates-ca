@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>develancacheui_frontend</Name>
+  <Repository>devedse/develancacheui_frontend</Repository>
+  <Registry>https://hub.docker.com/r/devedse/develancacheui_frontend/</Registry>
+  <Network>proxynet</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/devedse/DeveLanCacheUI_Frontend/issues</Support>
+  <Project>https://github.com/devedse/DeveLanCacheUI_Frontend/<Project/>
+  <Overview>Frontend Container for an UI for LANcache.&#xD;
+&#xD;
+Note: Use --sysctl net.ipv6.conf.all.disable_ipv6=1 as extra parameters if you get problems, when using IPv6.</Overview>
+  <Category>Tools: Network:Other</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams>--no-healthcheck</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1696685107</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>backend and frontend containers MUST run in the same custom user bridge/custom user network.</Requires>
+  <Config Name="Port" Target="80" Default="7302" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">7302</Config>
+  <Config Name="Backend URL" Target="BACKENDURL" Default="http://YOUR-UNRAID-IP:7301" Mode="" Description="URL from develancacheui_backend" Type="Variable" Display="always" Required="true" Mask="false">http://192.168.0.50:7301</Config>
+</Container>
