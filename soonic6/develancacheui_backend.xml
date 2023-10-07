@@ -12,7 +12,9 @@
   <Overview>Backend Container for an UI for LANcache.&#xD;
 &#xD;
 Note: Also add the DNS line if you errors in the container logs that it can't get the manifests due to a 401 unauthorized.&#xD;
-Also use --sysctl net.ipv6.conf.all.disable_ipv6=1 as extra parameters if you get problems, when using IPv6.</Overview>
+Also use --sysctl net.ipv6.conf.all.disable_ipv6=1 as extra parameters if you get problems, when using IPv6.&#xD;
+&#xD;
+!!!backend and frontend containers MUST run in the same custom user bridge/custom user network!!!</Overview>
   <Category>Tools: Network:Other</Category>
   <WebUI/>
   <TemplateURL/>
