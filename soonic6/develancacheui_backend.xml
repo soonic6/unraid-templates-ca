@@ -8,7 +8,7 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/devedse/DeveLanCacheUI_Backend/issues</Support>
-  <Project>https://github.com/devedse/DeveLanCacheUI_Backend/<Project/>
+  <Project>https://github.com/devedse/DeveLanCacheUI_Backend/</Project>
   <Overview>Backend Container for an UI for LANcache.&#xD;
 &#xD;
 Note: Also add the DNS line if you errors in the container logs that it can't get the manifests due to a 401 unauthorized.&#xD;
@@ -18,7 +18,7 @@ Also use --sysctl net.ipv6.conf.all.disable_ipv6=1 as extra parameters if you ge
   <Category>Tools: Network:Other</Category>
   <WebUI/>
   <TemplateURL/>
-  <icon>https://raw.githubusercontent.com/soonic6/unraid-templates-ca/main/soonic6/images/lancache-ui_backend.png<Icon/>
+  <icon>https://raw.githubusercontent.com/soonic6/unraid-templates-ca/main/soonic6/images/lancache-ui_backend.png</Icon>
   <ExtraParams>--no-healthcheck</ExtraParams>
   <PostArgs/>
   <CPUset/>
