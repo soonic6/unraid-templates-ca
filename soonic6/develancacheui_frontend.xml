@@ -11,7 +11,9 @@
   <Project>https://github.com/devedse/DeveLanCacheUI_Frontend/<Project/>
   <Overview>Frontend Container for an UI for LANcache.&#xD;
 &#xD;
-Note: Use --sysctl net.ipv6.conf.all.disable_ipv6=1 as extra parameters if you get problems, when using IPv6.</Overview>
+Note: Use --sysctl net.ipv6.conf.all.disable_ipv6=1 as extra parameters if you get problems, when using IPv6.&#xD;
+&#xD;
+!!!backend and frontend containers MUST run in the same custom user bridge/custom user network!!!</Overview>
   <Category>Tools: Network:Other</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
