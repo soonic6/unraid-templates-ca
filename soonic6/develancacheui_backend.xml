@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/devedse/develancacheui_backend/</Registry>
   <Network>proxynet</Network>
   <MyIP/>
-  <Shell>sh</Shell>
+  <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/devedse/DeveLanCacheUI_Backend/issues</Support>
   <Project>https://github.com/devedse/DeveLanCacheUI_Backend/</Project>
@@ -15,14 +15,15 @@ Note: Also add the DNS line if you errors in the container logs that it can't ge
 Also use --sysctl net.ipv6.conf.all.disable_ipv6=1 as extra parameters if you get problems, when using IPv6.&#xD;
 &#xD;
 !!!backend and frontend containers MUST run in the same custom user bridge/custom user network!!!</Overview>
-  <Category>Tools: Network:Other</Category>
+  <Beta>False</Beta>
+  <Category>Network:Management Tools:</Category>
+  <Date>2023-10-07</Date>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/soonic6/unraid-templates-ca/main/soonic6/images/lancache-ui_backend.png</Icon>
   <ExtraParams>--no-healthcheck</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1696685047</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires>backend and frontend containers MUST run in the same custom user bridge/custom user network.</Requires>
